@@ -1,0 +1,8 @@
+joaocaumo@JvCaumo:~$ ls -ld /home
+drwxr-xr-x 4 root root 4096 jun 20 16:24 /home
+joaocaumo@JvCaumo:~$ cd /home/Project
+joaocaumo@JvCaumo:/home/Project$ vim run.sh
+joaocaumo@JvCaumo:/home/Project$ sudo chmod 544 run.sh
+joaocaumo@JvCaumo:/home/Project$ sudo chown root run.sh
+joaocaumo@JvCaumo:/home/Project$ sudo ./run.sh
+Progamming is cool

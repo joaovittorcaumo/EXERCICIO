@@ -1,0 +1,66 @@
+joaocaumo@JvCaumo:~$ echo $HOME
+/home/joaocaumo
+joaocaumo@JvCaumo:~$ cd /home
+joaocaumo@JvCaumo:/home$ sudo mkdir Project
+[sudo] password for joaocaumo: 
+joaocaumo@JvCaumo:/home$ sudo mkdir Project/Test
+joaocaumo@JvCaumo:/home$ sudo rmdir Project/Test
+joaocaumo@JvCaumo:/home$ cd Project
+joaocaumo@JvCaumo:/home/Project$ pwd
+/home/Project
+joaocaumo@JvCaumo:/home/Project$ sudo touch empty.txt
+joaocaumo@JvCaumo:/home/Project$ echo 'Hello, World!' | sudo tee -a empty.txt
+Hello, World!
+joaocaumo@JvCaumo:/home/Project$ cat empty.txt
+Hello, World!
+joaocaumo@JvCaumo:/home/Project$ mv /home/Project/empty.txt HOME
+mv: cannot move '/home/Project/empty.txt' to 'HOME': Permission denied
+joaocaumo@JvCaumo:/home/Project$ sudo mv /home/Project/empty.txt HOME
+[sudo] password for joaocaumo: 
+joaocaumo@JvCaumo:/home/Project$ ls
+HOME
+joaocaumo@JvCaumo:/home/Project$ ls /home/joaocaumo/Downloads
+doisdo1.jpeg  exercicio.zip   ultimeira.jpeg
+doisdo2.jpeg  index.jpeg      vagrant_2.2.16_x86_64.rpm
+exercicio     shellclass.zip
+joaocaumo@JvCaumo:~$ man ls
+joaocaumo@JvCaumo:~$ ls -la ~/
+total 50908
+drwxr-xr-x 26 joaocaumo joaocaumo     4096 jun 20 16:43  .
+drwxr-xr-x  4 root      root          4096 jun 20 16:24  ..
+-rw-------  1 joaocaumo joaocaumo     8871 jun 20 16:57  .bash_history
+-rw-r--r--  1 joaocaumo joaocaumo      220 jun  8 14:00  .bash_logout
+-rw-r--r--  1 joaocaumo joaocaumo     3771 jun  8 14:00  .bashrc
+drwxr-xr-x 20 joaocaumo joaocaumo     4096 jun 16 19:24  .cache
+drwx------ 18 joaocaumo joaocaumo     4096 jun 16 20:48  .config
+drwxr-xr-x 15 joaocaumo joaocaumo     4096 jun 16 11:01  Desktop
+drwxr-xr-x  2 joaocaumo joaocaumo     4096 jun  8 14:06  Documents
+drwxr-xr-x  3 joaocaumo joaocaumo     4096 jun 16 11:03  Downloads
+-rw-rw-r--  1 joaocaumo joaocaumo       61 jun 12 17:32  .gitconfig
+drwx------  3 joaocaumo joaocaumo     4096 jun 20 16:48  .gnupg
+-rw-r--r--  1 root      root            14 jun 20 16:28  HOME
+-rw-rw-r--  1 joaocaumo joaocaumo   161169 jun  9 17:27  hs_err_pid4266.log
+drwxr-xr-x  3 joaocaumo joaocaumo     4096 jun  8 14:06  .local
+drwx------  5 joaocaumo joaocaumo     4096 jun  8 14:33  .mozilla
+drwxr-xr-x  2 joaocaumo joaocaumo     4096 jun  8 14:06  Music
+drwx------  3 joaocaumo joaocaumo     4096 jun 14 13:04  .nv
+drwxr-xr-x  2 joaocaumo joaocaumo     4096 jun  8 14:06  Pictures
+drwx------  3 joaocaumo joaocaumo     4096 jun  8 16:06  .pki
+-rw-r--r--  1 joaocaumo joaocaumo      807 jun  8 14:00  .profile
+drwxr-xr-x  2 joaocaumo joaocaumo     4096 jun  8 14:06  Public
+drwxrwxr-x  5 joaocaumo joaocaumo     4096 jun 16 13:17  shellclass
+drwxr-xr-x  7 joaocaumo joaocaumo     4096 jun  8 16:13  snap
+drwx------  2 joaocaumo joaocaumo     4096 jun  8 16:04  .ssh
+-rw-r--r--  1 joaocaumo joaocaumo        0 jun  8 14:34  .sudo_as_admin_successful
+drwxr-xr-x  2 joaocaumo joaocaumo     4096 jun  8 14:06  Templates
+drwx------  6 joaocaumo joaocaumo     4096 jun 13 19:14  .thunderbird
+drwxrwxr-x  7 joaocaumo joaocaumo     4096 jun 19 17:00  .vagrant.d
+drwxr-xr-x  2 joaocaumo joaocaumo     4096 jun  8 14:06  Videos
+-rw-------  1 joaocaumo joaocaumo     1116 jun 20 16:22  .viminfo
+drwx------  4 joaocaumo joaocaumo     4096 jun 16 13:21 'VirtualBox VMs'
+drwxrwxr-x  3 joaocaumo joaocaumo     4096 jun 15 20:03  vm1
+drwxrwxr-x  3 joaocaumo joaocaumo     4096 jun  8 16:06  .vscode
+-rw-rw-r--  1 joaocaumo joaocaumo      162 jun 16 19:23  .wget-hsts
+drwx------  7 joaocaumo joaocaumo     4096 jun 16 20:48  .zoom
+-rw-rw-r--  1 joaocaumo joaocaumo 51815088 jun  8 03:29  zoom_amd64.deb
+joaocaumo@JvCaumo:~$ 
